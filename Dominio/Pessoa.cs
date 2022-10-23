@@ -11,5 +11,4 @@ public class Pessoa
     public int Idade { get; private set; }
     public int Renda { get; private set; }
     public bool Dependente => Idade <= 18;
-
 }

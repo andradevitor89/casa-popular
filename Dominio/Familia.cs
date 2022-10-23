@@ -9,6 +9,7 @@ public class Familia
 
     public IEnumerable<Pessoa> Membros { get; private set; } = new List<Pessoa>();
     public int Renda => Membros.Sum(membro => membro.Renda);
+
     public int QuantidadeDependentes
     {
         get
@@ -16,5 +17,6 @@ public class Familia
             return Membros.Where(membro => membro.Dependente).Count();
         }
     }
+
     public int Pontuacao { get; set; }
 }

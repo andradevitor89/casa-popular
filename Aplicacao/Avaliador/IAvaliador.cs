@@ -1,7 +1,8 @@
 using Dominio;
 
 namespace Aplicacao;
-public interface IOrdenador
+
+public interface IAvaliador
 {
     IEnumerable<Familia> Executar(IEnumerable<Familia> familias);
 }

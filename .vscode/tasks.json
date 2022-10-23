@@ -5,31 +5,26 @@
       "label": "build",
       "command": "dotnet",
       "type": "process",
-      "args": [
-        "build",
-        "${workspaceFolder}/CasaPopular.csproj",
-        "/property:GenerateFullPaths=true",
-        "/consoleloggerparameters:NoSummary"
-      ],
+      "args": ["build", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "publish",
+      "label": "run",
       "command": "dotnet",
       "type": "process",
-      "args": [
-        "publish",
-        "${workspaceFolder}/CasaPopular.csproj",
-        "/property:GenerateFullPaths=true",
-        "/consoleloggerparameters:NoSummary"
-      ],
+      "args": ["run", "--project", "Aplicacao/"],
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "watch",
+      "label": "run tests",
       "command": "dotnet",
       "type": "process",
-      "args": ["watch", "run", "--project", "${workspaceFolder}/CasaPopular.csproj"],
+      "args": [
+        "test",
+        "/p:CollectCoverage=true",
+        "/p:CoverletOutputFormat=lcov",
+        "/p:CoverletOutput=lcov"
+      ],
       "problemMatcher": "$msCompile"
     }
   ]

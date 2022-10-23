@@ -23,7 +23,9 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\CasaPopular\CasaPopular.csproj" />
+        <ProjectReference Include="..\Dominio\Dominio.csproj" />
+        <ProjectReference Include="..\Aplicacao\Aplicacao.csproj" />
+        <ProjectReference Include="..\Mocks\Mocks.csproj" />
     </ItemGroup>
 
 </Project>

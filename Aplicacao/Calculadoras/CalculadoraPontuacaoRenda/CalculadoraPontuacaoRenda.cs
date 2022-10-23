@@ -2,7 +2,7 @@ using Dominio;
 
 namespace Aplicacao;
 
-public class CaluladoraPontuacaoRenda : ICalculadoraPontuacaoRenda
+public class CalculadoraPontuacaoRenda : ICalculadoraPontuacaoRenda
 {
     public int Executar(Familia familia)
     {

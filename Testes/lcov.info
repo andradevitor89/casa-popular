@@ -1,0 +1,158 @@
+SF:/home/vitor/Projetos/CasaPopular/Mocks/FamiliaMock.cs
+FN:7,Dominio.Familia Mocks.FamiliaMock::Criar(System.Int32,System.Int32)
+FNDA:10108,Dominio.Familia Mocks.FamiliaMock::Criar(System.Int32,System.Int32)
+DA:8,10108
+DA:10,10108
+DA:11,10108
+DA:12,10108
+DA:13,10108
+DA:14,10108
+DA:16,60382
+DA:17,20083
+DA:18,20083
+DA:19,20083
+DA:20,10108
+DA:21,10108
+BRDA:16,67,1,20083
+BRDA:16,67,0,10108
+FN:23,System.Collections.Generic.IEnumerable`1<Dominio.Familia> Mocks.FamiliaMock::CriarMultiplas(System.Int32)
+FNDA:1,System.Collections.Generic.IEnumerable`1<Dominio.Familia> Mocks.FamiliaMock::CriarMultiplas(System.Int32)
+DA:24,1
+DA:25,1
+DA:26,202
+DA:27,100
+DA:28,100
+DA:29,100
+DA:30,100
+DA:31,100
+DA:32,1
+DA:33,1
+BRDA:26,65,1,100
+BRDA:26,65,0,1
+LF:22
+LH:22
+BRF:4
+BRH:4
+FNF:2
+FNH:2
+end_of_record
+SF:/home/vitor/Projetos/CasaPopular/Aplicacao/Avaliador/Avaliador.cs
+FN:18,System.Collections.Generic.IEnumerable`1<Dominio.Familia> Aplicacao.Avaliador::Executar(System.Collections.Generic.IEnumerable`1<Dominio.Familia>)
+FNDA:2,System.Collections.Generic.IEnumerable`1<Dominio.Familia> Aplicacao.Avaliador::Executar(System.Collections.Generic.IEnumerable`1<Dominio.Familia>)
+DA:19,2
+DA:20,20206
+DA:21,10100
+DA:22,30300
+DA:23,10100
+DA:24,10100
+DA:26,10002
+DA:27,2
+BRDA:20,74,1,10100
+BRDA:20,74,0,2
+FN:8,System.Void Aplicacao.Avaliador::.ctor(Aplicacao.ICalculadoraPontuacaoRenda,Aplicacao.ICalculadoraPontuacaoDependentes)
+FNDA:2,System.Void Aplicacao.Avaliador::.ctor(Aplicacao.ICalculadoraPontuacaoRenda,Aplicacao.ICalculadoraPontuacaoDependentes)
+DA:9,2
+DA:10,2
+DA:11,2
+DA:12,2
+DA:13,2
+DA:14,2
+DA:15,2
+DA:16,2
+LF:16
+LH:16
+BRF:2
+BRH:2
+FNF:2
+FNH:2
+end_of_record
+SF:/home/vitor/Projetos/CasaPopular/Aplicacao/Calculadoras/CalculadoraPontuacaoDependentes/CalculadoraPontuacaoDependentes.cs
+FN:7,System.Int32 Aplicacao.CalculadoraPontuacaoDependentes::Executar(Dominio.Familia)
+FNDA:10006,System.Int32 Aplicacao.CalculadoraPontuacaoDependentes::Executar(Dominio.Familia)
+DA:8,10006
+DA:9,13972
+DA:10,10079
+DA:11,2001
+DA:12,10006
+BRDA:9,15,0,3966
+BRDA:9,15,1,6040
+BRDA:10,32,0,4039
+BRDA:10,32,1,2001
+LF:5
+LH:5
+BRF:4
+BRH:4
+FNF:1
+FNH:1
+end_of_record
+SF:/home/vitor/Projetos/CasaPopular/Aplicacao/Calculadoras/CalculadoraPontuacaoRenda/CalculadoraPontuacaoRenda.cs
+FN:7,System.Int32 Aplicacao.CalculadoraPontuacaoRenda::Executar(Dominio.Familia)
+FNDA:10008,System.Int32 Aplicacao.CalculadoraPontuacaoRenda::Executar(Dominio.Familia)
+DA:8,10008
+DA:9,14539
+DA:10,8455
+DA:11,2499
+DA:12,10008
+BRDA:9,19,0,4531
+BRDA:9,19,1,5477
+BRDA:10,43,0,2978
+BRDA:10,43,1,2499
+LF:5
+LH:5
+BRF:4
+BRH:4
+FNF:1
+FNH:1
+end_of_record
+SF:/home/vitor/Projetos/CasaPopular/Dominio/Familia.cs
+FN:9,System.Collections.Generic.IEnumerable`1<Dominio.Pessoa> Dominio.Familia::get_Membros()
+FNDA:51768,System.Collections.Generic.IEnumerable`1<Dominio.Pessoa> Dominio.Familia::get_Membros()
+DA:10,51768
+FN:10,System.Int32 Dominio.Familia::get_Renda()
+FNDA:77232,System.Int32 Dominio.Familia::get_Renda()
+DA:11,77232
+FN:15,System.Int32 Dominio.Familia::get_QuantidadeDependentes()
+FNDA:16047,System.Int32 Dominio.Familia::get_QuantidadeDependentes()
+DA:16,16047
+DA:17,74086
+DA:18,16047
+FN:20,System.Int32 Dominio.Familia::get_Pontuacao()
+FNDA:30100,System.Int32 Dominio.Familia::get_Pontuacao()
+DA:21,30100
+FN:4,System.Void Dominio.Familia::.ctor(System.Collections.Generic.IEnumerable`1<Dominio.Pessoa>)
+FNDA:10117,System.Void Dominio.Familia::.ctor(System.Collections.Generic.IEnumerable`1<Dominio.Pessoa>)
+DA:5,10117
+DA:6,10117
+DA:7,10117
+DA:8,10117
+LF:10
+LH:10
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:/home/vitor/Projetos/CasaPopular/Dominio/Pessoa.cs
+FN:10,System.Int32 Dominio.Pessoa::get_Idade()
+FNDA:98777,System.Int32 Dominio.Pessoa::get_Idade()
+DA:11,98777
+FN:11,System.Int32 Dominio.Pessoa::get_Renda()
+FNDA:102282,System.Int32 Dominio.Pessoa::get_Renda()
+DA:12,102282
+FN:12,System.Boolean Dominio.Pessoa::get_Dependente()
+FNDA:58241,System.Boolean Dominio.Pessoa::get_Dependente()
+DA:13,58241
+FN:4,System.Void Dominio.Pessoa::.ctor(System.Int32,System.Int32)
+FNDA:40434,System.Void Dominio.Pessoa::.ctor(System.Int32,System.Int32)
+DA:5,40434
+DA:6,40434
+DA:7,40434
+DA:8,40434
+DA:9,40434
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
