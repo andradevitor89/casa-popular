@@ -12,7 +12,7 @@ internal class Program
         var familias = FamiliaMock.CriarMultiplas(quantidade: 10000);
         var familiasOrdenadas = avaliador!.Executar(familias);
 
-        File.WriteAllLines("resultado", familiasOrdenadas.Select(f => $"Pontuação: {f.Pontuacao} - Renda: {f.Renda} - Dependentes: {f.QuantidadeDependentes}"));
+        File.WriteAllLines("Resultado", familiasOrdenadas.Select(f => $"Pontuação: {f.Pontuacao} - Renda: {f.Renda} - Dependentes: {f.QuantidadeDependentes}"));
     }
 
     public static void ConfigureServices(IServiceCollection services)
