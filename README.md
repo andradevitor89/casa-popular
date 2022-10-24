@@ -13,5 +13,5 @@ dotnet run --project Aplicacao/
 - Para executar os testes automatizados e coletar a cobertura de código, execute o comando
   
 ```
-dotnet test p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=lcov
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=lcov
 ```

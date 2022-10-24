@@ -18,18 +18,11 @@ public class AvaliadorTesteFuncional
     [Fact]
     public void Executar_DeveRetornarListaDeFamiliasOrdenadasPelaPontuacao()
     {
-        var random = new Random();
-        var familias = new List<Familia>();
-        for (int i = 0; i < 10000; i++)
-        {
-            var familia = FamiliaMock.Criar(dependentes: random.Next(0, 5),
-                                            renda: random.Next(0, 2000));
-            familias.Add(familia);
-        }
+        var familias = FamiliaMock.CriarMultiplas(quantidade: 10000);
 
         var familiasOrdenadas = _avaliador.Executar(familias);
 
         familiasOrdenadas.Should().BeInDescendingOrder(familia => familia.Pontuacao);
-        familiasOrdenadas.Should().HaveCount(familias.Count);
+        familiasOrdenadas.Should().HaveCount(familias.Count());
     }
 }
